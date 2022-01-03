@@ -22,6 +22,8 @@ do {
   } else if ((p === 'gunting' && comp === 'kertas') || (p === 'kertas' && comp === 'batu') || (p === 'batu' && comp === 'gunting')) {
     skor++;
     alert('Kamu memilih "' + p + '" dan komputer memilih "' + comp + '". KAMU MENANG!');
+  } else {
+    alert('Apakah kamu bisa membaca? pilih: gunting, batu, kertas!');
   }
   main = confirm('Skor kamu : '+ skor + ', lagi?');
 } while (main === true)
