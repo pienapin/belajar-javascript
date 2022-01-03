@@ -19,7 +19,7 @@ do {
     alert('Kamu memilih "' + p + '" dan komputer memilih "' + comp + '". SERI');
   } else if ((comp === 'gunting' && p === 'kertas') || (comp === 'kertas' && p === 'batu') || (comp === 'batu' && p === 'gunting')) {
     alert('Kamu memilih "' + p + '" dan komputer memilih "' + comp + '". KAMU KALAH!');
-  } else {
+  } else if ((p === 'gunting' && comp === 'kertas') || (p === 'kertas' && comp === 'batu') || (p === 'batu' && comp === 'gunting')) {
     skor++;
     alert('Kamu memilih "' + p + '" dan komputer memilih "' + comp + '". KAMU MENANG!');
   }
